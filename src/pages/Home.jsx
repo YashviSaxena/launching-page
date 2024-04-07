@@ -4,12 +4,12 @@ import ns from "../assets/neo saturn.png";
 import straight from "../assets/straight.svg";
 import Phone from "../components/Phone";
 import vector7575 from "../assets/Group 7575.svg";
-import Wave from "../components/Wave.jsx";
-import RadialBlur from "../components/RadialBlur.jsx";
+
+
 
 const Home = () => {
   return (
-    <div className="h-screen w-screen bg-[#03022A] px-48">
+    <div className="h-screen w-screen overflow-hidden bg-[#03022A] px-48">
       <img
         src={straight}
         alt=""
@@ -76,9 +76,7 @@ const Home = () => {
       <div className="radial-blurs lg:w-[200px] lg:h-[200px] bg-[#0c9aff] absolute bottom-[0%] right-[0%] blur-[100px] -z-1"></div>  */}
        
         
-        <div className="absolute bottom-10 right-[180px] z-50">
-          <Wave />
-        </div>
+        
       </div>
     </div>
   );
