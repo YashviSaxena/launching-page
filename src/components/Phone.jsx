@@ -1,14 +1,44 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PlayButton from './PlayButton';
 import AnimatedTextWord from './AnimatedTextWord';
 import '../App.css'; // Import CSS file for styling
+import music from '../assets/mp3.mp3';
 
 const Phone = () => {
   const [toggle, setToggle] = useState(true);
+  const [audio] = useState(new Audio(music));
 
   const toggleState = () => {
     setToggle(!toggle);
+    if (!toggle) {
+      audio.play(); // Start playing the audio when toggle is true
+    } else {
+      audio.pause(); // Pause the audio when toggle is false
+      audio.currentTime = 0; // Reset the audio playback position
+    }
   };
+
+  useEffect(() => {
+    // Start playing the audio when the component mounts
+    audio.play();
+
+    // Replay the audio when it ends, only if toggle is true
+    const handleAudioEnded = () => {
+      if (toggle) {
+        audio.play();
+      }
+    };
+
+    // Listen for the 'ended' event of the audio element
+    audio.addEventListener('ended', handleAudioEnded);
+
+    // Cleanup function to remove the event listener when the component unmounts
+    return () => {
+      audio.removeEventListener('ended', handleAudioEnded);
+      audio.pause();
+      audio.currentTime = 0;
+    };
+  }, []); // Run the effect only once when the component mounts
 
   return (
     <div className='relative z-30 shadow-5xl rounded-3xl'>
@@ -28,13 +58,13 @@ const Phone = () => {
         <div className='cursor-pointer absolute -right-[12%] -bottom-[2%]' onClick={toggleState}>
           <div className='flex justify-center items-center bg-white w-14 h-14 rounded-full'>
             {toggle ? (
-               <>
+              <>
                 <div className='mr-1 line'></div>
                 <div className='mr-1 line'></div>
                 <div className='mr-1 line'></div>
                 <div className='mr-1 line'></div>
                 <div className='line'></div>
-                </>
+              </>
             ) : (
               <div className='bg-blue-700 w-[60%] h-[3px]'></div>
             )}
