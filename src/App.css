@@ -29,3 +29,7 @@
   animation: springAnimation 1.5s infinite;
   z-index: 10;
 }
+
+.text-wrapper h1{
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
