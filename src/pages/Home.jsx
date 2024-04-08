@@ -7,11 +7,11 @@ import vector7575 from "../assets/Group 7575.svg";
 
 const Home = () => {
   return (
-    <div className="lg:h-screen overflow-hidden w-screen bg-[#03022A] xl:px-48 lg:px-32 px-20">
+    <div className="lg:h-screen h-auto w-screen bg-[#03022A] xl:px-48 lg:px-32 px-20">
       <img
         src={straight}
         alt=""
-        className="absolute left-0 md:left-16 top-0 h-auto md:h-[500px] "
+        className="absolute left-8 md:left-16 lg:top-10 top-24   md:h-[500px] "
       />
       <img
         src={vector7575}
@@ -26,7 +26,7 @@ const Home = () => {
 
       <div className="flex lg:flex-row flex-col justify-center lg:justify-between items-center">
         <div className="flex justify-center items-center flex-col z-20">
-          <div className="mt-10 flex py-2 rounded-full sm:w-[400px] w-[350px] items-center sm:h-8 h-7  border border-cyan-500/50 backdrop-blur-lg bg-[#03022A] ">
+        <div className="lg:mt-10 mt-24 flex py-2 rounded-full sm:w-[400px] w-[350px] items-center sm:h-8 h-7  border border-cyan-500/50 backdrop-blur-lg bg-[#03022A] ">
             <p className="text-white text-center text-xs sm:text-sm font-semibold border border-cyan-500/50 mr-4 py-[5px] text-[10px] bg-[#070952a4] px-5  rounded-full">
               New
             </p>
@@ -60,6 +60,11 @@ const Home = () => {
         
         <div className="lg:mt-0 lg:pb-0 pb-10 mt-20">
           <Phone />
+          <img
+        src={straight}
+        alt=""
+        className="absolute right-8 md:right-12 lg:top-10 top-24 h-auto md:h-[500px] "
+      />
         </div>
       </div>
     </div>

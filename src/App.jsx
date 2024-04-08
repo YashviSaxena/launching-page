@@ -4,7 +4,7 @@ import Home from './pages/Home'
 
 const App = () => {
   return (
-    <div className=''>
+    <div className='overflow-x-hidden'>
       <Home/>
     </div>
   )
