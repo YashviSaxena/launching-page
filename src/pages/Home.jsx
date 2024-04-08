@@ -7,11 +7,11 @@ import vector7575 from "../assets/Group 7575.svg";
 
 const Home = () => {
   return (
-    <div className="lg:h-screen lg:py-0 pb-16  w-screen bg-[#03022A] xl:px-48 lg:px-32 px-20">
+    <div className="lg:h-screen  pb-16  w-screen bg-[#03022A] xl:px-48 lg:px-32 px-20">
       <img
         src={straight}
         alt=""
-        className="absolute left-8 md:left-16 h-[500px] mt-10"
+        className="absolute left-8 md:left-16 h-[500px] "
       />
       <img
         src={vector7575}
@@ -66,7 +66,7 @@ const Home = () => {
           src={straight}
           alt=""
 
-          className="absolute md:right-24 sm:right-12 right-8 h-[500px] bottom-10"
+          className="absolute md:right-24 sm:right-12 right-8 h-[500px] "
         />
         </div>
         
