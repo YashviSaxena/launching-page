@@ -7,7 +7,7 @@ import vector7575 from "../assets/Group 7575.svg";
 
 const Home = () => {
   return (
-    <div className="lg:h-screen  w-screen bg-[#03022A] xl:px-48 lg:px-32 px-20">
+    <div className="lg:h-screen lg:py-0 pb-16  w-screen bg-[#03022A] xl:px-48 lg:px-32 px-20">
       <img
         src={straight}
         alt=""
