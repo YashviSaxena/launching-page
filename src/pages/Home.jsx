@@ -50,10 +50,10 @@ const Home = () => {
                 type="tel"
                 placeholder="Enter phone number"
                 name="phone"
-                className="mt-5 z-40 bg-blue-400/20 px-5 border-2 border-blue-500/10 backdrop-blur-lg outline-none text-sm text-white rounded-md h-10 w-[400px]"
+                className="mt-5 z-40 bg-blue-400/20 px-5 focus:ring-1 focus:ring-blue-500 border-2 border-blue-500/10 backdrop-blur-lg outline-none text-sm text-white rounded-md h-10 w-[400px]"
               />
 
-              <button class="mt-5 hover:shadow-4xl shadow-3xl border z-40 bg-[#03022A] text-lg font-semibold border-y-sky-500 border-r-cyan-400 border-l-indigo-500  w-[400px] rounded-tl-2xl rounded-br-2xl h-10 text-white relative overflow-hidden">
+              <button class="mt-5 hover:shadow-4xl shadow-3xl hover:ring-1 hover:ring-cyan-500 z-4 bg-[#323BFF] hover:bg-[#326BFF]  font-semibold   w-[400px] rounded-tl-2xl  rounded-br-2xl h-10 text-white relative overflow-hidden">
                 Notify me
               </button>
             </div>
