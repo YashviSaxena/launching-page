@@ -11,12 +11,12 @@ const Home = () => {
       <img
         src={straight}
         alt=""
-        className="absolute left-6 md:left-16 lg:top-10 top-24 h-[400px]  md:h-[500px] "
+        className="absolute left-6 md:left-16 lg:top-10 top-32 h-[500px] "
       />
       <img
         src={vector7575}
         alt=""
-        className="absolute lg:block hidden top-32 w-[700px] ml-16 -z-1"
+        className="absolute lg:block hidden top-36 w-[700px] ml-16 -z-1"
       />
 
       <div className="flex justify-start items-center">
@@ -63,7 +63,7 @@ const Home = () => {
           <img
         src={straight}
         alt=""
-        className="absolute right-6 md:right-12 lg:top-10 top-24  h-[400px] md:h-[500px] "
+        className="absolute right-6 md:right-12 lg:top-10 top-36 h-[500px] "
       />
         </div>
       </div>
