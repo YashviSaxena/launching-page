@@ -43,7 +43,11 @@ const Phone = () => {
   return (
     <div className='relative z-30 shadow-5xl rounded-3xl'>
       <div className="h-[530px] w-[280px] bg-gradient-to-b from-blue-700 to-[#03022A] relative rounded-2xl border-black border-8">
-        <AnimatedTextWord text="Coming Soon" className="text-3xl font-semibold text-white" />
+        {/* <AnimatedTextWord text="Coming Soon" className="text-3xl font-semibold text-white" /> */}
+        <h1 class="text-hsl-gray text-4xl mt-8 text-center font-black  tracking-wide cursor-pointer  bg-gradient-to-r from-hsl-gray-30 via-white to-hsl-gray-30 bg-clip-text text-transparent animate-shine">
+  Coming Soon
+</h1>
+
         <div className='px-8 mt-20'>
           <h1 className='text-white text-2xl font-semibold'>The Thinker.</h1>
           <h1 className='text-white text-2xl font-semibold'>The Innovator.</h1>
