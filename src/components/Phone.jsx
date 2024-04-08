@@ -56,7 +56,7 @@ const Phone = () => {
           <h1 className='mt-10 text-lg text-cyan-400'>Want to know how?</h1>
           <div className='z-20 mt-1 cursor-pointer'>
             <PlayButton />
-            <div className='bg-cyan-400 h-7 w-7 rounded-full left-[100px] bottom-20 absolute blur-md -z-1'></div>
+            <div className='bg-cyan-400 h-7 w-7 rounded-full left-[100px] bottom-20  absolute blur-md -z-1'></div>
           </div>
         </div>
         <div className='cursor-pointer absolute -right-[12%] -bottom-[2%]' onClick={toggleState}>

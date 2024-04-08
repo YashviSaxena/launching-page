@@ -26,7 +26,7 @@ const Home = () => {
 
       <div className="flex lg:flex-row flex-col justify-center lg:justify-between items-center">
         <div className="flex justify-center items-center flex-col z-20">
-        <div className="lg:mt-10 mt-24 flex py-2 rounded-full sm:w-[400px] w-[350px] items-center sm:h-8 h-7  border border-cyan-500/50 backdrop-blur-lg bg-[#03022A] ">
+        <div className="lg:mt-10 mt-28 flex py-2 rounded-full sm:w-[400px] w-[350px] items-center sm:h-8 h-7  border border-cyan-500/50 backdrop-blur-lg bg-[#03022A] ">
             <p className="text-white text-center text-xs sm:text-sm font-semibold border border-cyan-500/50 mr-4 py-[5px] text-[10px] bg-[#070952a4] px-5  rounded-full">
               New
             </p>
