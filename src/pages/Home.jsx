@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../assets/logosign.png";
-import ns from "../assets/neo saturn.png";
+import logo from "../assets/ns-logo.png";
+import ns from "../assets/ns-text.png";
 import straight from "../assets/straight.svg";
 import Phone from "../components/Phone";
 import vector7575 from "../assets/Group 7575.svg";
@@ -52,10 +52,10 @@ const Home = () => {
                 name="phone"
                 className="mt-5 z-40 bg-blue-400/20 px-5 focus:ring-1 focus:ring-blue-500 border-2 border-blue-500/10 backdrop-blur-lg outline-none text-sm text-white rounded-md h-10 w-[400px]"
               />
+<button class="mt-5 hover:shadow-4xl transition-all ease-in-out duration-300 shadow-3xl hover:ring-3 z-4 bg-[#323BFF] hover:bg-[#326BFF]  font-semibold   w-[400px] rounded-tl-2xl  rounded-br-2xl h-10 text-white relative overflow-hidden focus:ring-2 focus:outline-none focus:ring-[#468abd]">
+    Notify me
+</button>
 
-              <button class="mt-5 hover:shadow-4xl shadow-3xl hover:ring-1 hover:ring-cyan-500 z-4 bg-[#323BFF] hover:bg-[#326BFF]  font-semibold   w-[400px] rounded-tl-2xl  rounded-br-2xl h-10 text-white relative overflow-hidden">
-                Notify me
-              </button>
             </div>
           </div>
         </div>
