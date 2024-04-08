@@ -11,7 +11,7 @@ const Home = () => {
       <img
         src={straight}
         alt=""
-        className="absolute left-6 md:left-16 lg:top-10 top-32 h-[500px] "
+        className="absolute left-6 md:left-16 lg:top-10 top-48 h-[500px] "
       />
       <img
         src={vector7575}
@@ -63,7 +63,7 @@ const Home = () => {
           <img
         src={straight}
         alt=""
-        className="absolute right-6 md:right-12 lg:top-10 top-36 h-[500px] "
+        className="absolute right-6 md:right-12 lg:top-10 top-48 h-[500px] "
       />
         </div>
       </div>
