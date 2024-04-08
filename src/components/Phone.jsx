@@ -41,8 +41,8 @@ const Phone = () => {
   }, []); // Run the effect only once when the component mounts
 
   return (
-    <div className='relative z-30 shadow-5xl rounded-3xl'>
-      <div className="h-[530px] w-[280px] bg-gradient-to-b from-blue-700 to-[#03022A] relative rounded-2xl border-black border-8">
+    <div className='relative z-30  shadow-5xl rounded-3xl'>
+      <div className="h-[500px] w-[280px] bg-gradient-to-b from-blue-700 to-[#03022A] relative rounded-2xl border-black border-8">
         {/* <AnimatedTextWord text="Coming Soon" className="text-3xl font-semibold text-white" /> */}
         <h1 class="text-hsl-gray text-4xl mt-8 text-center font-black  tracking-wide cursor-pointer  bg-gradient-to-r from-hsl-gray-30 via-white to-hsl-gray-30 bg-clip-text text-transparent animate-shine">
   Coming Soon
@@ -56,7 +56,7 @@ const Phone = () => {
           <h1 className='mt-10 text-lg text-cyan-400'>Want to know how?</h1>
           <div className='z-20 mt-1 cursor-pointer'>
             <PlayButton />
-            <div className='bg-cyan-400 h-7 w-7 rounded-full left-[100px] bottom-[110px] absolute blur-md -z-1'></div>
+            <div className='bg-cyan-400 h-7 w-7 rounded-full left-[100px] bottom-20 absolute blur-md -z-1'></div>
           </div>
         </div>
         <div className='cursor-pointer absolute -right-[12%] -bottom-[2%]' onClick={toggleState}>
