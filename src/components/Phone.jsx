@@ -64,10 +64,10 @@ const Phone = () => {
         </div>
 
          <div >
-           <img src={playCircle} alt="" className="h-8 pointer sm:h-16 fixed  right-10 bottom-3"/>
+           <img src={playCircle} alt="" className=" pointer h-10 fixed  right-5 bottom-3"/>
          </div>
         
-        <div className='cursor-pointer absolute -right-[12%] -bottom-[2%]' onClick={toggleState}>
+        {/* <div className='cursor-pointer absolute -right-[12%] -bottom-[2%]' onClick={toggleState}>
           <div className='flex justify-center items-center bg-white w-14 h-14 rounded-full'>
             {toggle ? (
               <>
@@ -81,7 +81,7 @@ const Phone = () => {
               <div className='bg-blue-700 w-[60%] h-[3px]'></div>
             )}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -168,7 +168,7 @@ const Home = () => {
     setSubmissionSuccess(false);
   };
   return (
-    <div className="lg:h-screen h-auto w-screen bg-[#03022A] xl:px-40 px-28">
+    <div className="lg:h-screen w-screen bg-[#03022A] xl:px-40 px-28">
       <img
         src={straight}
         alt=""
@@ -184,6 +184,8 @@ const Home = () => {
         <img src={logo} alt="" className="mt-10 mr-2 md:h-10 h-6" />
         <img src={ns} alt="" className="mt-12 md:h-6 h-3" />
       </div>
+
+
 
       <div className="flex lg:flex-row flex-col px-20 justify-center  lg:justify-between items-center">
         <div className="flex justify-center items-center flex-col z-20">
