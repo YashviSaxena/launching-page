@@ -3,6 +3,9 @@ import PlayButton from './PlayButton';
 import AnimatedTextWord from './AnimatedTextWord';
 import '../App.css'; // Import CSS file for styling
 import music from '../assets/mp3.mp3';
+import playCircle from "../assets/playcircle.svg";
+
+
 
 const Phone = () => {
   const [toggle, setToggle] = useState(true);
@@ -59,6 +62,11 @@ const Phone = () => {
             <div className='bg-cyan-400 h-7 w-7 rounded-full left-[100px] bottom-20  absolute blur-md -z-1'></div>
           </div>
         </div>
+
+         <div >
+           <img src={playCircle} alt="" className="h-12 sm:hidden block -right-10 absolute bottom-52"/>
+         </div>
+        
         <div className='cursor-pointer absolute -right-[12%] -bottom-[2%]' onClick={toggleState}>
           <div className='flex justify-center items-center bg-white w-14 h-14 rounded-full'>
             {toggle ? (
