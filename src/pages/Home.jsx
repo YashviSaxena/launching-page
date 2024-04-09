@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/ns-logo.png";
 import ns from "../assets/ns-text.png";
 import straight from "../assets/straight.svg";
 import Phone from "../components/Phone";
 import vector7575 from "../assets/Group 7575.svg";
+import { MdCancel } from "react-icons/md";
+
 
 const Home = () => {
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [submissionSuccess, setSubmissionSuccess] = useState(false);
+
+  const handleNotifyClick = () => {
+    if (phoneNumber.length === 10 && !isNaN(phoneNumber)) {
+      console.log("Phone number is valid:", phoneNumber);
+      setSubmissionSuccess(true);
+      setPhoneNumber("");
+      setErrorMessage("");
+
+      // Automatically hide the success message after 3 seconds
+      setTimeout(() => {
+        setSubmissionSuccess(false);
+      }, 3000);
+    } else {
+      setErrorMessage("Phone number is inappropriate.");
+    }
+  };
+
+  const handleCross = () => {
+    setSubmissionSuccess(false);
+  };
   return (
     <div className="lg:h-screen h-auto w-screen bg-[#03022A] xl:px-48 lg:px-32 px-20">
       <img
@@ -26,7 +51,7 @@ const Home = () => {
 
       <div className="flex lg:flex-row flex-col justify-center lg:justify-between items-center">
         <div className="flex justify-center items-center flex-col z-20">
-        <div className="lg:mt-10 mt-28 flex py-2 rounded-full sm:w-[400px] w-[350px] items-center sm:h-8 h-7  border border-cyan-500/50 backdrop-blur-lg bg-[#03022A] ">
+          <div className="lg:mt-10 mt-28 flex py-2 rounded-full sm:w-[400px] w-[350px] items-center sm:h-8 h-7  border border-cyan-500/50 backdrop-blur-lg bg-[#03022A] ">
             <p className="text-white text-center text-xs sm:text-sm font-semibold border border-cyan-500/50 mr-4 py-[5px] text-[10px] bg-[#070952a4] px-5  rounded-full">
               New
             </p>
@@ -49,23 +74,43 @@ const Home = () => {
                 type="tel"
                 placeholder="Enter phone number"
                 name="phone"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
                 className="mt-5 z-40 bg-blue-400/20 px-5 focus:ring-1 focus:ring-blue-500 border-2 border-blue-500/10 backdrop-blur-lg outline-none text-sm text-white rounded-md h-10 sm:w-[400px] w-[350px]"
               />
-              <button className="mt-5 hover:shadow-4xl transition-all ease-in-out duration-300 shadow-3xl hover:ring-3 z-4 bg-[#323BFF] hover:bg-[#326BFF]  font-semibold   sm:w-[400px] w-[350px] rounded-tl-2xl  rounded-br-2xl h-10 text-white relative overflow-hidden focus:ring-2 outline-none focus:ring-[#468abd]">
+               {errorMessage && (
+                <p className="text-red-500 text-sm mt-2">{errorMessage}</p>
+              )}
+              <button
+                onClick={handleNotifyClick}
+                className="mt-5 hover:shadow-4xl transition-all ease-in-out duration-300 shadow-3xl hover:ring-3 z-4 bg-[#323BFF] hover:bg-[#326BFF]  font-semibold   sm:w-[400px] w-[350px] rounded-tl-2xl  rounded-br-2xl h-10 text-white relative overflow-hidden focus:ring-2 outline-none focus:ring-[#468abd]"
+              >
                 Notify me
               </button>
+             
             </div>
           </div>
         </div>
-        
+
         <div className="lg:mt-0 lg:pb-0 pb-10 mt-20">
           <Phone />
           <img
-        src={straight}
-        alt=""
-        className="absolute right-5 md:right-12 lg:top-10 top-48 h-[500px] "
-      />
+            src={straight}
+            alt=""
+            className="absolute right-5 md:right-12 lg:top-10 top-48 h-[500px] "
+          />
         </div>
+        <div className="flex flex-col justify-start absolute sm:top-5 top-20 right-5">
+        {submissionSuccess && (
+          <div className="flex justify-center z-50 transition-all duration-300 ease-in-out  items-center px-2 py-1 rounded-md bg-green-500 text-white">
+               <p className=" px-2 py-1 rounded">
+            Submitted successfully
+          </p>
+          <MdCancel className="text-white mt-1 z-50 cursor-pointer" onClick={handleCross}/>
+          </div>
+       
+        )}
+      </div>
       </div>
     </div>
   );
