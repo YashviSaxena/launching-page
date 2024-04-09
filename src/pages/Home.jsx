@@ -185,7 +185,7 @@ const Home = () => {
         <img src={ns} alt="" className="mt-12 md:h-6 h-3" />
       </div>
 
-      <div className="flex lg:flex-row flex-col px-20 justify-center md:mr-0 mr-5 lg:justify-between items-center">
+      <div className="flex lg:flex-row flex-col px-20 justify-center  lg:justify-between items-center">
         <div className="flex justify-center items-center flex-col z-20">
           <div className="lg:mt-10 mt-28 flex py-2 rounded-full sm:w-[400px] w-[342px] items-center sm:h-8 h-7  border border-cyan-500/50 backdrop-blur-lg bg-[#03022A] ">
             <p className="text-white text-center text-xs sm:text-sm font-semibold border border-cyan-500/50 mr-4 py-[5px] text-[10px] bg-[#070952a4] px-5  rounded-full">
@@ -228,7 +228,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="lg:mt-0 lg:pb-0 pb-10 mt-32">
+        <div className="lg:mt-0 lg:pb-0 pb-10 mt-40">
           <Phone />
           <img
             src={straight}
