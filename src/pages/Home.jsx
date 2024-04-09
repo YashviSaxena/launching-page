@@ -228,7 +228,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="lg:mt-0 lg:pb-0 pb-10 mt-40">
+        <div className=" lg:mt-0 lg:pb-0 pb-10 mt-48">
           <Phone />
           <img
             src={straight}
