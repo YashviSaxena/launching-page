@@ -64,7 +64,7 @@ const Phone = () => {
         </div>
 
          <div >
-           <img src={playCircle} alt="" className="h-16 sm:hidden block -right-12 absolute bottom-52"/>
+           <img src={playCircle} alt="" className="h-8 pointer sm:h-16 fixed  right-10 bottom-3"/>
          </div>
         
         <div className='cursor-pointer absolute -right-[12%] -bottom-[2%]' onClick={toggleState}>
