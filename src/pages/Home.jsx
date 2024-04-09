@@ -196,12 +196,12 @@ const Home = () => {
             </p>
           </div>
           <div className="flex flex-col justify-center items-center mt-8">
-            <h1 className="text-white flex justify-center items-center sm:text-3xl text-2xl font-semibold w-[425px]">
+            <h1 className="text-white flex justify-center items-center sm:text-3xl text-2xl font-semibold sm:w-[425px] w-[360px]">
               Disrupting the way Banking
               <br />
               works, one segment at a time.
             </h1>
-            <p className="mt-5 text-white text-sm sm:w-[400px] w-[340px]">
+            <p className="mt-5 text-white ml-5 sm:ml-0 text-sm sm:w-[400px] w-[330px] ">
               Redefining banking: Empowering everyone, everywhere with
               innovative financial solutions.
             </p>
@@ -212,14 +212,14 @@ const Home = () => {
                 name="phone"
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
-                className="mt-5 z-40 bg-blue-400/20 px-5 focus:ring-1 focus:ring-blue-500 border-2 border-blue-500/10 backdrop-blur-lg outline-none text-sm text-white rounded-md h-10 sm:w-[400px] w-[350px]"
+                className="mt-5 z-40 bg-blue-400/20 px-5 mx-auto focus:ring-1 focus:ring-blue-500 border-2 border-blue-500/10 backdrop-blur-lg outline-none text-sm text-white rounded-md h-10 sm:w-[400px] w-[320px]"
               />
                {errorMessage && (
                 <p className="text-red-500 text-sm mt-2">{errorMessage}</p>
               )}
               <button
                 onClick={handleNotifyClick}
-                className="mt-5 hover:shadow-4xl transition-all ease-in-out duration-300 shadow-3xl hover:ring-3 z-4 bg-[#323BFF] hover:bg-[#326BFF]  font-semibold   sm:w-[400px] w-[350px] rounded-tl-2xl  rounded-br-2xl h-10 text-white relative overflow-hidden focus:ring-2 outline-none focus:ring-[#468abd]"
+                className="mt-5 hover:shadow-4xl transition-all ease-in-out duration-300 shadow-3xl hover:ring-3 z-4 bg-[#323BFF] hover:bg-[#326BFF]  font-semibold   sm:w-[400px] w-[320px] rounded-tl-2xl  rounded-br-2xl h-10 text-white relative overflow-hidden focus:ring-2 outline-none focus:ring-[#468abd]"
               >
                 Notify me
               </button>
